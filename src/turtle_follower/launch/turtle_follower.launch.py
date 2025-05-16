@@ -13,6 +13,11 @@ def generate_launch_description():
     spawn_second_turtle = Node(
         package='turtle_follower',
         executable='spawner',
+        parameters=[{
+            'x': 4.0,
+            'y': 4.0,
+            'theta': 90.0
+        }]
     )
 
     follower_node = Node(
