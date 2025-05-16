@@ -23,7 +23,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'follower = turtle_follower.follower:main'
+            'follower = turtle_follower.follower:main',
+            'spawner = turtle_follower.spawner:main'
         ],
     },
 )
